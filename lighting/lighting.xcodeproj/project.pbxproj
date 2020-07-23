@@ -11,11 +11,12 @@
 		3B4BEDAE212524A000398719 /* dummy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BECA3212524A000398719 /* dummy.cpp */; };
 		3B4BEDAF212524A000398719 /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BECB4212524A000398719 /* glm.cpp */; };
 		3B4BEDB1212524B500398719 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BEDB0212524B500398719 /* main.cpp */; };
-		3B4BEDB32125253E00398719 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB22125253E00398719 /* OpenGL.framework */; };
-		3B4BEDB52125254900398719 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB42125254900398719 /* IOKit.framework */; };
-		3B4BEDB72125255400398719 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB62125255400398719 /* Cocoa.framework */; };
-		3B4BEDB92125256100398719 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB82125256100398719 /* CoreVideo.framework */; };
-		7E3684E3248808D400453FAF /* libglfw3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5D4647248800A400851F94 /* libglfw3.a */; };
+		7E92025024C982F0000CEAA3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB62125255400398719 /* Cocoa.framework */; };
+		7E92025124C982F9000CEAA3 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB82125256100398719 /* CoreVideo.framework */; };
+		7E92025224C98301000CEAA3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB42125254900398719 /* IOKit.framework */; };
+		7E92025324C9830D000CEAA3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4BEDB22125253E00398719 /* OpenGL.framework */; };
+		7E92025524C9833E000CEAA3 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E92025424C9833E000CEAA3 /* libglfw.3.3.dylib */; };
+		7E92025624C9833E000CEAA3 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 7E92025424C9833E000CEAA3 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,17 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		7E92025724C9833E000CEAA3 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7E92025624C9833E000CEAA3 /* libglfw.3.3.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -314,7 +326,7 @@
 		3BCB5ADF212AB00600242747 /* pokemonBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pokemonBall.png; sourceTree = "<group>"; };
 		3BCB5AE0212AB00600242747 /* vertex_cube.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex_cube.vs; sourceTree = "<group>"; };
 		3BCB5AE1212AB00600242747 /* vertex_lighting.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vertex_lighting.vs; sourceTree = "<group>"; };
-		7E5D4647248800A400851F94 /* libglfw3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libglfw3.a; path = ../../glfw/src/libglfw3.a; sourceTree = "<group>"; };
+		7E92025424C9833E000CEAA3 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/Cellar/glfw/3.3.2/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,11 +334,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B4BEDB92125256100398719 /* CoreVideo.framework in Frameworks */,
-				7E3684E3248808D400453FAF /* libglfw3.a in Frameworks */,
-				3B4BEDB72125255400398719 /* Cocoa.framework in Frameworks */,
-				3B4BEDB52125254900398719 /* IOKit.framework in Frameworks */,
-				3B4BEDB32125253E00398719 /* OpenGL.framework in Frameworks */,
+				7E92025024C982F0000CEAA3 /* Cocoa.framework in Frameworks */,
+				7E92025324C9830D000CEAA3 /* OpenGL.framework in Frameworks */,
+				7E92025124C982F9000CEAA3 /* CoreVideo.framework in Frameworks */,
+				7E92025524C9833E000CEAA3 /* libglfw.3.3.dylib in Frameworks */,
+				7E92025224C98301000CEAA3 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,7 +766,7 @@
 		7E5D4646248800A400851F94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7E5D4647248800A400851F94 /* libglfw3.a */,
+				7E92025424C9833E000CEAA3 /* libglfw.3.3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -769,6 +781,7 @@
 				3B4BEC81212523C000398719 /* Sources */,
 				3B4BEC82212523C000398719 /* Frameworks */,
 				3B4BEC83212523C000398719 /* CopyFiles */,
+				7E92025724C9833E000CEAA3 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -911,9 +924,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				LIBRARY_SEARCH_PATHS = /Users/zlam/Workspace/glfw/src;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/glfw/3.3.2/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/zlam/Workspace/glfw/include /Users/zlam/Workspace/LearnOpenGL/lighting/glad/include /Users/zlam/Workspace/LearnOpenGL/lighting/glm /Users/zlam/Workspace/LearnOpenGL/lighting/stb";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/glfw/3.3.2/include /Users/zlam/Workspace/LearnOpenGL/lighting/glad/include /Users/zlam/Workspace/LearnOpenGL/lighting/glm /Users/zlam/Workspace/LearnOpenGL/lighting/stb";
 			};
 			name = Debug;
 		};
@@ -921,9 +934,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
-				LIBRARY_SEARCH_PATHS = /Users/zlam/Workspace/glfw/src;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/glfw/3.3.2/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "/Users/zlam/Workspace/glfw/include /Users/zlam/Workspace/LearnOpenGL/lighting/glad/include /Users/zlam/Workspace/LearnOpenGL/lighting/glm /Users/zlam/Workspace/LearnOpenGL/lighting/stb";
+				USER_HEADER_SEARCH_PATHS = "/usr/local/Cellar/glfw/3.3.2/include /Users/zlam/Workspace/LearnOpenGL/lighting/glad/include /Users/zlam/Workspace/LearnOpenGL/lighting/glm /Users/zlam/Workspace/LearnOpenGL/lighting/stb";
 			};
 			name = Release;
 		};
